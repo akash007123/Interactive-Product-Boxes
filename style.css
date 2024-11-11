@@ -1,0 +1,116 @@
+.container {
+    max-width: 400px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+
+  h3{
+    text-align: center;
+    color: rgba(255, 107, 130, 1);
+  }
+  
+  .option-box {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 8px 0;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .option-box:hover{
+    border: 2px solid rgba(255, 107, 130, 1);
+  }
+  
+  .option-box input[type="radio"] {
+    margin-right: 8px;
+    accent-color: rgba(255, 107, 130, 1);
+    outline: none;
+  }
+  
+  .details {
+    display: none;
+    padding-top: 8px;
+  }
+  
+  .selection {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .selection div {
+    flex: 1;
+    margin-right: 8px;
+  }
+  
+  .selection label {
+    font-size: 0.9em;
+  }
+  
+  .add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(255, 107, 130, 1);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+ 
+
+  .container-one {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 15px 0;
+  }
+  
+  .box-one {
+    display: flex;
+    width: 100%;
+  }
+  
+  .right-text {
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  .para{
+    text-align: right;
+    color: rgb(197, 193, 193);
+    font-family: Inter;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+
+  .custom-select{
+    padding: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;                    
+    background-color: #f2f2f2;     
+    border: 1px solid #ccc;         
+    border-radius: 5px;             
+    cursor: pointer;
+  }
+
+  .custom-select:focus{
+    outline: none;
+  border-color: #007bff;          
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  }
+
+  label span{
+    background-color: rgba(255, 107, 130, 1);
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 1px;
+  }

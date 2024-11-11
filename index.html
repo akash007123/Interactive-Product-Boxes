@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <title>Interactive Product Boxes</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h3>YAY! It's BOGO</h3>
+        <div class="option-box" id="box1">
+          <input type="radio" name="unitOptions" id="unit1" onclick="toggleDetails('details1')">
+          <label for="unit1">1 Unit  <span>10% Off</span></label>
+          <div class="details" id="details1">
+            <p>Price: $10.00 USD <s>$24.00 USD</s></p>
+            <div class="selection">
+              <div>
+                <label for="size1">Size #1:</label>
+                <select id="size1" class="custom-select">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+                
+                <br><br>
+
+                <label for="color1">Colour #1:</label>
+                <select id="color1" class="custom-select">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </div>
+              <div>
+                
+                <label for="size2">Size #2:</label>
+                <select id="size2" class="custom-select">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+                <br><br>
+                <label for="color2">Colour #2:</label>
+                <select id="color2" class="custom-select">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="option-box" id="box2">
+          <input type="radio" name="unitOptions" id="unit2" onclick="toggleDetails('details2')">
+          <label for="unit2">2 Unit <span>20% Off</span></label>
+          <div class="details" id="details2">
+            <p>Price: $18.00 USD <s>$24.00 USD</s></p>
+            <div class="selection">
+              <div>
+                <label for="size3">Size #1:</label>
+                <select id="size3" class="custom-select">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select> <br><br>
+                <label for="color3">Colour #1:</label>
+                <select id="color3" class="custom-select">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="size4">Size #2:</label>
+                <select id="size4" class="custom-select">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select><br><br>
+                <label for="color4">Colour #2:</label>
+                <select id="color4" class="custom-select">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="option-box" id="box3">
+          <input type="radio" name="unitOptions" id="unit3" onclick="toggleDetails('details3')">
+          <label for="unit3">3 Unit <span>30% Off</span></label>
+          <div class="details" id="details3">
+            <p>Price: $24.00 USD <s>$34.00 USD</s></p>
+            <div class="selection">
+              <div>
+                <label for="size5">Size #1:</label>
+                <select id="size5" class="custom-select">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select><br><br>
+                <label for="color5">Colour #1:</label>
+                <select id="color5" class="custom-select">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </div>
+              <div>
+                <label for="size6">Size #2:</label>
+                <select id="size6" class="custom-select">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select><br><br>
+                <label for="color6">Colour #2:</label>
+                <select id="color6" class="custom-select">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+        <div class="container-one">
+            <div class="box-one">
+              <span style="color: rgba(255, 107, 130, 1);">Free Delivery</span>
+              <span class="right-text">Total : $18.00 USD</span>
+            </div>
+        </div>
+      
+        <button class="add-to-cart"><i class="fa-regular fa-plus"></i>&nbsp; Add to Cart</button>
+        <p class="para">@ Powered by Pumper</p>
+      </div>
+      
+<script>
+    function toggleDetails(detailsId) {
+  const allDetails = document.querySelectorAll('.details');
+  allDetails.forEach(detail => {
+    detail.style.display = 'none';
+  });
+
+  const selectedDetails = document.getElementById(detailsId);
+  selectedDetails.style.display = 'block';
+}
+</script>      
+    
+</body>
+</html>
